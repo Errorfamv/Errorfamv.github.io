@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    #mem{
+      margin-left: 60px;
+      border-radius: 20%;
+      background: transparent;
+    }
+    #txt{
+      margin-top: -50px;
+      margin-left: 80px;
+      color: lightgrey;
+      font-style: italic;
+      font-family: fantasy;
+    }
+    h2{
+      margin-left: 80px;
+      color: lightslategrey;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    input{
+     margin-left: 80px; 
+     border: solid dimgrey 2px;
+     border-radius: 20px;
+     padding: 8px;
+     background-color: midnightblue;
+     color: lime;
+     font-family: fantasy;
+    }
+    button{
+      background-color: midnightblue;
+      color: lime;
+      padding: 8px;
+      border-radius: 15px;
+      font-family: fantasy;
+    }
+  </style>
+</head>
+
+<body bgcolor="black">
+  <h2 >MrCoolCat meme generator</h2>
+  
+<img src="mem.png" id="mem"/>
+<h2 id="txt">MrCat memGen</h2>
+
+<input id="input" type="search" placeholder="InputText"/>
+<button onclick="Gen()">GEN</button>
+</body>
+<script>
+  function Gen(){
+     var input = document.getElementById('input').value
+    document.getElementById('txt').innerHTML = input;
+  }
+</script>
+  </html
